@@ -23,7 +23,7 @@ python get_mask_deepfashion.py --root_path path_to_your_data
 
 ## Acknowledgements
 
-Thanks [IDM-VTION] (https://github.com/yisol/IDM-VTON) and [IDM-VITON-train] (https://github.com/luxiaolili/IDM-VTON-train) for most codes.
+Thanks [IDM-VTION](https://github.com/yisol/IDM-VTON) and [IDM-VITON-train](https://github.com/luxiaolili/IDM-VTON-train) for most codes.
 
 Thanks [SCHP](https://github.com/GoGoDuck912/Self-Correction-Human-Parsing) for human segmentation.
 
