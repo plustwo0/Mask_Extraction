@@ -11,14 +11,17 @@ pip install -r requirements.txt
 2. Download [parsing_atr.onnx](https://huggingface.co/yisol/IDM-VTON/tree/main/humanparsing) and [parsing_lip.onnx](https://huggingface.co/yisol/IDM-VTON/tree/main/humanparsing) and put it under `ckpt/humanparsing/`.
 3. Download [body_pose_model.pth](https://huggingface.co/yisol/IDM-VTON/tree/main/openpose/ckpts) and put it under `ckpt/openpose/ckpts`.
 
+`get_mask_deepfashion.py` will generate mask automatically with openpose detection without specify the category of clothes.
 ```
 python get_mask_deepfashion.py --root_path test_data/full_body/
 ```
 
-or
+or run `get_mask_specify.py` to specify the category of clothes to have a better control.
+
+- 'category' contains: 'upper_body', 'lower_body' and 'dresses'
 
 ```
-python get_mask_deepfashion.py --root_path path_to_your_data
+python get_mask_specify.py --root_path path_to_your_data --category upper_body
 ```
 
 ## Acknowledgements
